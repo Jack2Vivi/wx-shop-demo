@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/person/person",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "right",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序平台",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#FF8C00",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "position": "buttom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/shou.png",
+        "selectedIconPath": "./images/s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "images/ding.png",
+        "selectedIconPath": "images/dingg.png",
+        "text": "服务"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "images/g.png",
+        "selectedIconPath": "images/gg.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "debug": false
+}

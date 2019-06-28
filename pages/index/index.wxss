@@ -1,0 +1,108 @@
+/**index.wxss**/
+
+.head {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.page-section {
+  width: 100%
+}
+
+.swiper-item {
+  display: block;
+  width: 100%;
+  border-radius:10px;
+  height:100%;
+}
+
+.menu-item{
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.menu-wrp {
+  margin-top: 20px;
+}
+
+.menu-img {
+    width: 120rpx;
+    height: 84rpx;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.menu-desc {
+    background-color: #ffffff;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+}
+
+.swiper-tab {
+  margin-top: 20px；
+}
+.swiper-tab-list {
+    float: left;
+    height: 50px;
+    width: 20%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    background-color: #333333;
+    margin-left: 10px;
+}
+
+/**筛选栏**/
+.nav-tab {
+  margin-top: 5px;
+  width: 98%;
+  margin-left: 1%;
+}
+
+.nav-son {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  width: 25%;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  float: left;
+  background-color: #e6e6e6;
+}
+
+.content {
+  display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+  border: 4px solid transparent;
+  border-top: 4px solid #9b9b9b;
+  margin-left: 5px;
+}
+
+.region-wrp{
+  display:flex;
+  /**background-color: #fff111;**/
+}
+.item {
+  align-content:left;
+  font-size:12px;
+  background-color:#fff;
+  padding-left:20px;
+}
+
+.chcked {
+  background-color: #D0D0D0;
+}
+
+.one {
+  background-color: #F0F0F0;
+}

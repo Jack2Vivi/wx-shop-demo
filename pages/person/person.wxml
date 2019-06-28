@@ -1,0 +1,36 @@
+<view>
+  <view class='head'>
+
+    <view class='head_img'>
+      <image src="/images/kf.png"></image>
+      <button size="mini" type="primary" open-type="getUserInfo">登陆/注册</button>
+    </view>
+
+    <view class="menu-wrp">
+      <!--设定一个item项后，遍历输出-->
+      <view class="menu-item" wx:for="{{menus}}">
+        <image class="menu-img" src="{{item.img}}" />
+        <view class="menu-desc">{{item.desc}}</view>
+      </view>
+    </view>
+
+  </view>
+
+  <scroll-view>
+  <view class="caidan">
+    <view class='caidan_item' wx:for="{{caidan}}">
+      <text>{{item}}</text>
+      <view class="icon"></view>
+    </view>
+   </view>
+
+   <view class="caidan">
+    <view class='caidan_item' wx:for="{{sys}}">
+      <text>{{item}}</text>
+      <view class="icon"></view>
+    </view>
+   </view>
+
+  <view class='ver'>-- V1.0.0 --</view>
+  </scroll-view>
+</view>

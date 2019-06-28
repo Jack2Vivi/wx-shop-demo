@@ -1,0 +1,46 @@
+.head {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.page-section {
+  width: 100%
+}
+
+.swiper-item {
+  display: block;
+  width: 100%;
+  border-radius:10px;
+  height:100%;
+}
+
+.flex-item {
+
+  float: left;
+  width: 47%;
+  margin-left: 2%;
+  margin-top: 10px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 10px;
+  align-items: baseline;
+  text-align: center;
+}
+.ordBig {
+  margin-bottom:  10rpx;
+  border:1px solid #ccc;
+}
+
+.ordImg {
+  text-align: center;
+}
+
+.ordImg image  {
+  width: 200px;
+  height: 200px;
+}
+
+.ordText text {
+  text-align: center;
+  display: block;
+}

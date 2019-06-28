@@ -1,0 +1,76 @@
+/* pages/person.wxss */
+
+.head_img {
+  text-align: center;
+}
+
+.head_img image {
+  width: 50px;
+  height: 50px;
+  display:block;
+  margin:auto;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+
+.menu-item{
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.menu-wrp {
+  margin-top: 20px;
+}
+
+.menu-img {
+    width: 120rpx;
+    height: 84rpx;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.menu-desc {
+    background-color: #ffffff;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+}
+
+.caidan_item {
+  width:95%;
+  margin:auto;
+  background-color:#0ff;
+  padding:6px 0px;
+}
+
+.caidan_item text {
+  margin-left:10px;
+  font-size:14px;
+}
+
+.icon {
+  display:inline-block;
+  border:5px solid transparent;
+  border-left:10px solid #000;
+  margin-left:65%;
+}
+
+.caidan_item + .caidan_item {
+  border-top: 1px solid #333333;
+}
+
+.caidan {
+  margin-top: 20px;
+}
+
+.ver {
+  margin:20px 10px;
+  font-size: 14px;
+  text-align: center
+}

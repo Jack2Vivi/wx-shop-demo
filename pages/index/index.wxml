@@ -1,0 +1,80 @@
+<!--index.wxml-->
+<view class="container" >
+  <view class="head">
+    <view class="page-section">
+      <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+              <image class="swiper-item" src="{{item}}"></image>
+            </swiper-item>
+          </block>
+      </swiper>
+    </view>
+  </view>
+
+
+<view class="menu-wrp">
+  <!--设定一个item项后，遍历输出-->
+  <view class="menu-item" wx:for="{{menus}}">
+     <image class="menu-img" src="{{item.img}}" />
+      <view class="menu-desc">{{item.desc}}</view>
+  </view>
+</view>
+
+<view class="nav-tab">
+  <view class="nav-son {{hyopen? 'active' : ''}}" bindtap="listqy" data-nav="1">
+      <view class="content">{{dropDownMenuTitle[0]}}</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son borders {{sqopen? 'active' : ''}}" bindtap="list" data-nav="2">
+      <view class="content">{{dropDownMenuTitle[1]}}</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son borders-right {{pxopen? 'active' : ''}}" bindtap="listpx" data-nav="3">
+      <view class="content">{{dropDownMenuTitle[2]}}</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son {{sortopen ? 'active' : ''}}" bindtap="listsort" data-nav="4">
+      <view class="content">{{dropDownMenuTitle[3]}}</view>
+      <view class="icon"></view>
+    </view>
+</view>
+
+<view class="nav-select" hidden="{{nav!='-1'?false:true}}">
+  <view class="region-wrp" hidden="{{nav=='1'?false:true}}">
+    <view class="type-item" style="width: {{regionItem}};">
+      <view class="item type {{item.check ? 'chcked' : ''}}" wx:for="{{cityleft}}" bindtap="selectleft" data-city='{{item.name}}'>{{item.name}}</view>
+    </view>
+    <view class="one-item" style="width: {{regionItem}};">
+      <view class="item {{item.check ? 'chcked' : 'one'}}" wx:for="{{cityleft2}}" bindtap="selectleft2" data-city='{{item.name}}'>{{item.name}}</view>
+    </view>
+    <view class="two-item" hidden="{{regionItem2<=0}}" style="width: {{regionItem2+'%'}};">
+      <view class="item {{item.check ? 'chcked' : 'one'}}" wx:for="{{cityleft2}}" bindtap="selectleft2" data-city='{{item.name}}'>{{item.name}}</view>
+    </view>
+    <!--
+    <view class="county-item">
+      <view class="county" wx:for="{{cityleft}}" bindtap="selectleft" data-city='{{index}}'>
+                {{item}}
+      </view>
+    </view> 
+    -->
+  </view>
+</view>
+
+</view>
+
+
+
+
+    <!--
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登陆 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> 
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>-->
